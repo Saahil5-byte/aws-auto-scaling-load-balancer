@@ -65,5 +65,4 @@ reflecting real-world cost discipline used in production cloud environments.
 
 ## 🔮 What I'd Improve at Scale
 - Trigger scaling via **CloudWatch CPU/Network metrics** instead of only CRON, for real-time reactive scaling
-- Add **HTTPS (ACM certificate)** on the ALB
 - Convert manual console setup into **Terraform/CloudFormation** for repeatable, version-controlled infrastructure
