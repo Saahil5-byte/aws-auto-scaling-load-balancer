@@ -13,9 +13,6 @@ back down when demand drops, with zero manual intervention.
 > The infrastructure needs to detect this rise and scale automatically —
 > without an engineer manually launching instances.
 
-## 🏗️ Architecture Diagram
-![architecture](architecture-diagram.png)
-
 ## 🛠️ Tech Stack
 `AWS EC2` `Launch Templates` `Auto Scaling Groups (ASG)` `Elastic Load Balancer (ELB)`
 `Target Groups` `Apache Web Server` `CRON Scaling Policies` `CloudWatch`
@@ -54,15 +51,6 @@ back down when demand drops, with zero manual intervention.
 - Deployed 1 Application Load Balancer (ALB) in front of the Target Group
 - Distributes incoming traffic evenly across all active instances
 - Single DNS endpoint regardless of how many instances are running behind it
-
-## 📸 Screenshots
-| Step | Screenshot |
-|------|-----------|
-| Launch Template Config | `screenshots/01-launch-template.png` |
-| Auto Scaling Group (Min/Desired/Max) | `screenshots/02-asg-config.png` |
-| CRON Scaling Policy | `screenshots/03-cron-policy.png` |
-| Target Group Health Checks | `screenshots/04-target-group.png` |
-| Load Balancer + Live Apache Output | `screenshots/05-final-output.png` |
 
 ## ✅ Result
 Successfully tested the ALB DNS endpoint in a browser and confirmed live
